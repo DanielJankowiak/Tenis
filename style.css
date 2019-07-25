@@ -1,0 +1,64 @@
+body {
+	background-color: darkgray;
+}
+canvas {
+	border:3px solid white;
+	border-radius: 25px;
+	
+}
+.cointainer {
+	display: flex;
+	align-items: column;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.cnv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#dialoverlay {
+	display: none;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background: #FFF;
+	left: 0px;
+	top: 0px;
+}
+#dialbox {
+	display: none;
+	position: fixed;
+	background: #000;
+	z-index: 1;
+	width: 550px;
+	border-radius: 7px;
+}
+
+#dialbox > div {background: #FFF; margin: 8px;}
+#dialbox > div >  #dialboxhead{background: #666; font-size: 19px; padding: 10px; color: #CCC;}
+#dialbox > div >  #dialboxbody{background: #333; padding: 20px; color: #FFF;}
+#dialbox > div >  #dialboxfooter{background: #666; padding: 10px; text-align: center;}
+
+.cb {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background: #EEE;
+	border: 1px solid #999;
+	border-radius: 10px;
+	transition: background 0.2 linear;
+	cursor: pointer;
+	text-align: center;
+}
+
